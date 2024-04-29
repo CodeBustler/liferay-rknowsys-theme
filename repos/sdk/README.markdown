@@ -21,14 +21,14 @@ Liferay's main source code resides in two repositories:
 [liferay-plugins](https://github.com/liferay/liferay-plugins). Liferay has
 additional repositories for the following:
 
-* [AlloyUI](https://github.com/liferay/alloy-ui)
-* [Documentation](https://github.com/liferay/liferay-docs)
-* [Git Tools](https://github.com/liferay/git-tools)
-* [Liferay Faces](https://github.com/liferay/liferay-faces)
-* [Liferay IDE](https://github.com/liferay/liferay-ide)
-* [Maven Support](https://github.com/liferay/liferay-maven-support)
+- [AlloyUI](https://github.com/liferay/alloy-ui)
+- [Documentation](https://github.com/liferay/liferay-docs)
+- [Git Tools](https://github.com/liferay/git-tools)
+- [Liferay Faces](https://github.com/liferay/liferay-faces)
+- [Liferay IDE](https://github.com/liferay/liferay-ide)
+- [Maven Support](https://github.com/liferay/liferay-maven-support)
 
-Liferay Portal *releases* are built from the liferay-portal repository and
+Liferay Portal _releases_ are built from the liferay-portal repository and
 include select plugins from the liferay-plugins repository. You can build
 Liferay Portal, its plugins, and/or any of the other supporting technologies
 from their respective repositories.
@@ -49,41 +49,41 @@ Guide](http://www.liferay.com/documentation/liferay-portal/6.1/development)
 explains how to create, build, and deploy your plugins. Follow the instructions
 in this section to build and deploy any of the existing SDK plugins quickly.
 
-For demonstration purposes, let's pretend your user name is *joe* and you have a
+For demonstration purposes, let's pretend your user name is _joe_ and you have a
 Liferay instance bundled with Apache Tomcat running in your `/home/joe/`
 directory.
 
-1. Fork the [liferay-plugins](https://github.com/liferay/liferay-plugins)
-repository.
+1.  Fork the [liferay-plugins](https://github.com/liferay/liferay-plugins)
+    repository.
 
-2. Clone your fork of the repository.
-3. Create a `build.${username}.properties` file in the root directory of your
-liferay-plugins repository clone. Be sure to replace `${username}` with your
-user name.
+2.  Clone your fork of the repository.
+3.  Create a `build.${username}.properties` file in the root directory of your
+    liferay-plugins repository clone. Be sure to replace `${username}` with your
+    user name.
 
-		/home/joe/liferay-plugins/build.joe.properties
+        	/home/joe/liferay-plugins/build.joe.properties
 
-	Note, to determine your user name, execute `echo %USERNAME%` on Windows or
-	`whoami` on Unix/Linux.
+        Note, to determine your user name, execute `echo %USERNAME%` on Windows or
+        `whoami` on Unix/Linux.
 
-4. In your `build.${username}.properties` file, specify the
-`app.server.parent.dir` property set to the parent path of your app server.
+4.  In your `build.${username}.properties` file, specify the
+    `app.server.parent.dir` property set to the parent path of your app server.
 
-    	app.server.parent.dir=/home/joe/liferay-portal-6.1.1-ga2
+        	app.server.parent.dir=/home/joe/liferay-portal-6.1.1-ga2
 
-	Use your `build.${username}.properties` file to specify any additional
-	properties you wish to override from the base `build.properties` file; do
-	not modify the base file.
+        Use your `build.${username}.properties` file to specify any additional
+        properties you wish to override from the base `build.properties` file; do
+        not modify the base file.
 
-5. Navigate to the directory of a plugin (e.g. *Sample JSP Portlet*) and deploy
-it using Ant.
+5.  Navigate to the directory of a plugin (e.g. _Sample JSP Portlet_) and deploy
+    it using Ant.
 
-		cd /home/joe/liferay-plugins/portlets/sample-jsp-portlet
-		ant deploy
+        	cd /home/joe/liferay-plugins/portlets/sample-jsp-portlet
+        	ant deploy
 
-	The plugin compiles, its WAR file is built to the plugin's `dist` directory,
-	the WAR file is copied to your Liferay *Hot Deploy* directory, and the
-	plugin is deployed immediately. It's just that easy!
+        The plugin compiles, its WAR file is built to the plugin's `dist` directory,
+        the WAR file is copied to your Liferay *Hot Deploy* directory, and the
+        plugin is deployed immediately. It's just that easy!
 
 There are many other options for developing new Liferay plugins using the
 Plugins SDK. Consult the [Liferay Development
@@ -121,7 +121,7 @@ the liferay-portal repository.
 
 ## Liferay Portal Community Edition License
 
-This library, *Liferay Portal Community Edition*, is free software ("Licensed
+This library, _Liferay Portal Community Edition_, is free software ("Licensed
 Software"); you can redistribute it and/or modify it under the terms of the [GNU
 Lesser General Public License](http://www.gnu.org/licenses/lgpl-2.1.html) as
 published by the Free Software Foundation; either version 2.1 of the License, or
@@ -137,3 +137,4 @@ License](http://www.gnu.org/licenses/lgpl-2.1.html) along with this library; if
 not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth
 Floor, Boston, MA 02110-1301 USA
 
+#TEST
